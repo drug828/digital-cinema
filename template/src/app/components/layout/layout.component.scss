@@ -1,0 +1,9 @@
+@reference '../../../tailwind.css';
+
+.layout {
+  @apply flex flex-col min-h-screen bg-surface-950;
+
+  &__content {
+    @apply flex-1 p-6;
+  }
+}

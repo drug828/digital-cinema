@@ -1,0 +1,25 @@
+@reference '../../../tailwind.css';
+
+.navigation {
+  @apply flex items-center justify-between px-6 py-4 bg-surface-900 text-surface-0;
+
+  &__brand {
+    @apply flex items-center gap-2 text-lg font-semibold no-underline text-surface-0;
+  }
+
+  &__links {
+    @apply flex items-center gap-4;
+  }
+
+  &__link {
+    @apply text-surface-300 no-underline text-sm font-medium px-2 py-1 rounded transition-colors;
+
+    &:hover {
+      @apply text-surface-0;
+    }
+
+    &--active {
+      @apply text-primary-400;
+    }
+  }
+}
